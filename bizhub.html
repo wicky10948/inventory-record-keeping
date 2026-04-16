@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bizhub</title>
+    <link rel="stylesheet" href="bizhub.css">
+</head>
+<body>  
+    <header>
+        <h1>Bella The Greate Biz Hub</h1>
+    </header>
+        <p>Welcome to Bella The Greate Biz Hub</p>
+<button id="addItemBtn">Add Item</button>
+<!-- items table -->
+<table>
+    <thead>
+        <tr>
+        <th>#</th>
+        <th>Item name</th>
+        <th>Price p/unit</th>
+        <th>Quantity</th>
+        <th>Description</th>
+        <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody id="items-table-body">
+        <!-- Items will be added here dynamically -->
+    </tbody>
+</table>
+<div id="item-form" style="display:none;">
+    <h2 id="form-title">Add Item</h2>
+    <input type="hidden" id="item-id">
+    <input type="text" id="item-name" placeholder="Item Name">
+    <input type="number" id="item-price" placeholder="Price per Unit">
+    <input type="number" id="item-quantity" placeholder="Quantity">
+    <input type="text" id="item-description" placeholder="Description">
+    <button onclick="saveItem()">Save</button>
+    <button onclick="closeForm()">Cancel</button>
+</div>
+    <script src="Bizhub.js"></script>
+</body>
+</html>
